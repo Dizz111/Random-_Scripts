@@ -1,0 +1,32 @@
+# common is used for both iperf client and server
+# ports, are the listening and recieving ports
+# server is the listening IP address only needed if you are using a multi-homed server (see code comment)
+# client ip's are the server that you wish to talk to.
+
+# the script will run the number of (loop)s for (duration) seconds, with a (sleep) delay between each loop.
+
+
+common:
+  ports:
+    - 80
+    - 1000
+    - 1001
+    - 1002
+    - 1003
+    - 1004
+    - 1005
+    - 1006
+    - 1007
+    - 1008
+    - 1009
+  loop: 100
+  duration: 1
+  sleep: 30
+
+server:
+  ip:
+    - 192.168.102.6
+
+client:
+  ip:
+    - 192.168.102.6
